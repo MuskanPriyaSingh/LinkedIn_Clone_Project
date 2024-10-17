@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="
+                images/logo.png"></a>
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search" >
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div> 
+        </div>
+
+    <!-------------- profile-drop-down-menu ---------------------->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Muskan Priya</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/settings.png">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--------------- navbar ended -------------->
+
+    <div class="container">
+        
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover-pic.jpeg" width="100%" >
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.png">
+                    <h1>Muskan Priya</h1>
+                    <h3>🚀 Computer Science and Engineering(CSE) Enthusiast | Student at MAKAUT 🎓</h3>
+                    <ul>
+                        <li>Profile viewers<span>310</span></li>
+                        <li>Post impressions<span>145</span></li>
+                        <li>Connections<span>500+</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="images/premium.png">Try Premium</a>
+                    <a href="#"><img src="images/items.png">Saved items</a>
+                </div>
+            </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png">Web Development</a>
+                <a href="#"><img src="images/recent.png">User Interface</a>
+                <a href="#"><img src="images/recent.png">Online Learning</a>
+                <a href="#"><img src="images/recent.png">Code Better</a>
+                <a href="#"><img src="images/recent.png">Group Learning</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/groups.png">Web Design Group</a>
+                <a href="#"><img src="images/groups.png">HTML & CSS Learners</a>
+                <a href="#"><img src="images/groups.png">Python & JavaScript</a>
+                <a href="#"><img src="images/groups.png">Learn Coding Online</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hastag.png">webdevelopment</a>
+                <a href="#"><img src="images/hastag.png">userinterface</a>
+                <a href="#"><img src="images/hastag.png">onlinelearning</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+        </div>
+
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/user-1.png">
+                    <textarea rows="3" placeholder="Start a post, try writing with AI"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png">Media</li>
+                    <li><img src="images/event.png">Event</li>
+                    <li><img src="images/article.png">Write article</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>Top <img src="images/down-arrow.png" ></span></p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-2.jpg">
+                    <div>
+                        <h1>Lisa Lyra</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>    
+                <p>Achieving success with a website starts with mastering search engine optimization and crafting a robust digital marketing strategy. If your site ranks on the first page of all major search engines, you're already a step ahead of the competition.</p>
+                <img src="images/post-image-1.jpg" width="100%">
+
+                <div class="post-status">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Lisa Lyra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.webp">
+                    <div>
+                        <h1>David Hook</h1>
+                        <small>Data Analyst at Google</small>
+                        <small>8 hours ago</small>
+                    </div>
+                </div>    
+                <p>Mastering robotics begins with innovative design and advanced algorithms, but true success lies in seamless integration and real-world application. When your robotic solutions outperform and adapt in dynamic environments, you're already a step ahead in the race for technological advancement.</p>
+                <img src="images/post-image-2.jpg" width="100%">
+
+                <div class="post-status">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Flex Davis and 452 others</span>
+                    </div>
+                    <div>
+                        <span>341 comments &middot; 245 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.jpg">
+                    <div>
+                        <h1>Flex Davis</h1>
+                        <small>Business Consultant at Innovexa Solutions</small>
+                        <small>2 days ago</small>
+                    </div>
+                </div>    
+                <p>Taking a break from the daily grind to reconnect with nature—nothing like fresh air and open skies to refresh the mind and recharge the spirit. 🌿🌞</p>
+                <img src="images/post-image-3.avif" width="100%">
+
+                <div class="post-status">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Soniya Sen and 129 others</span>
+                    </div>
+                    <div>
+                        <span>142 comments &middot; 98 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon">
+                <h3>LinkedIn News</h3>
+                <b>Top stories</b>
+                <a href="#">AI Revolution: How Artificial Intelligence is Redefining the Future of Work</a>
+                <span>1h ago &middot; 16,739 readers</span>
+
+                <a href="#">Digital Transformation: The Must-Have Strategies for Business Success in 2024</a>
+                <span>1h ago &middot; 2,132 readers</span>
+
+                <a href="#">Leadership Trends: Evolving Skills Every Leader Needs in the Modern Workplace</a>
+                <span>1h ago &middot; 6,498 readers</span>
+
+                <a href="#">Cybersecurity in Focus: Emerging Threats and How Businesses Are Responding</a>
+                <span>1h ago &middot; 12,956 readers</span>
+
+                <a href="#">Remote Work Evolution: The Latest Tools and Trends Shaping the Future of Work</a>
+                <span>12h ago &middot; 4,200 readers</span>
+                
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Muskan, restart your Premium free trial today!</p>
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/key.png">
+                </div>
+                <b>See who's viewed your profile in the last 365 days</b>
+                <a href="#" class="ad-link">Restart Trial</a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessiblity</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy & Policy</a>
+                <a href="#">Ad Choices</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business Services</a>
+                <a href="#">Get the LinkedIn app</a>
+                <a href="#">More</a>
+                <div class="copyright-msg">
+                    <img src="images/logo.png">
+                    <p>Linkedin &#169; All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu")
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+    <script>
+        let sideActivity = document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showMoreLink")
+
+        function toggleActivity(){
+            sideActivity.classList.toggle("open-activity");
+
+            if(sideActivity.classList.contains("open-activity")){
+                moreLink.innerHTML = "Show less <b>-<b>";
+            }
+            else{
+                moreLink.innerHTML = "Show more <b>+<b>";
+            }
+        }
+    </script>
+</body>
+</html>

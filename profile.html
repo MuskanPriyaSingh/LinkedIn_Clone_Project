@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="
+                images/logo.png"></a>
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div> 
+        </div>
+
+    <!-------------- profile-drop-down-menu ---------------------->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Muskan Priya</h3>
+                        <a href="index.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/settings.png">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--------------- navbar ended -------------->
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="images/cover-pic.jpeg" width="100%" class="profile-cover-pic">
+                <div class="profile-container-inner">
+                    <img src="images/user-1.png" class="profile-pic">
+                    <h1>Muskan Priya</h1>
+                    <b>🚀 Computer Science and Engineering(CSE) Enthusiast | Student at MAKAUT 🎓</b>
+                    <p>Kolkata metropolitan area, West Bengal, India &middot; <a href="#">Contact info</a></p>
+                    <a href="#">500+ connections</a>
+                    <div class="profile-container-info">
+                        <li><a href="#" class="open-to">Open to</a></li>
+                        <li><a href="#" class="add-profile">Add profile section</a></li>
+                        <li><a href="#" class="more">More</a></li>
+                    </div>
+               </div>
+            </div>
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>Greetings! 👋 I'm Muskan Priya, a 4th year Computer Science and Engineering student at Maulana Abul Kalam Azad University of Technology (MAKAUT). Immersed in the dynamic world of technology, I'm dedicated to mastering the tools and skills that drive innovation in the field of CSE.</p>
+                <a href="#" class="see-more-link">See more...</a>
+            </div>
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="images/codsoft.png">
+                    <div>
+                        <h3>Web Development Intern</h3>
+                        <span>CodSoft &middot; Internship</span>
+                        <b>Aug 2023 - Aug 2023 &middot; 1 mo</b>
+                        <b>India</b>
+                        <p>The primary focus of this internship is on learning and developing new skills and gaining hands-on knowledge.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="images/makaut.png">
+                    <div>
+                        <h3>Maulana abul Kalam Azad University of Technology, West Bengal formerly WBUT</h3>
+                        <span>Bachelors of technology, Computer Science & Engineering</span>
+                        <b>2021 - 2025</b>
+                        <div class="skills-container">
+                            <img src="images/diamond.png">
+                            <a href="#">Microsoft Excel, English and +7 skills</a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="profile-description">
+                <h2>Licenses & certifications</h2>
+                <div class="profile-desc-row">
+                    <img src="images/unstop.jpeg">
+                    <div>
+                        <h3>Certificate of Participation in J & J Crackathon</h3>
+                        <span>Unstop</span>
+                        <b>Issued Sep 2023</b>
+                        <b>Credential ID 10f57ade-1c83-4ab6-9f8e-38493716c3b5</b>
+                        <div class="show-credential">
+                            <a href="#">Show credential <img src="images/credential.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/unstop.jpeg">
+                    <div>
+                        <h3>Certificate of Participation in Level 1.1: E-Commerce</h3>
+                        <span>Unstop</span>
+                        <b>Issued Sep 2023</b>
+                        <b>Credential ID a357378f-74d6-40df-82ca-6be1b59e219c</b>
+                        <div class="show-credential">
+                            <a href="#">Show credential <img src="images/credential.png"></a>
+                        </div>
+                        <div class="show-arrow">
+                            <a href="#">Show all 3 licenses & certifications<img src="images/arrow.png"></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <div><a href="#" class="skills-btn">Bootstrap (Framework)</a></div>
+                <div><a href="#" class="skills-btn">Machine Learning</a></div>
+                <div class="show-arrow">
+                    <a href="#">Show all 17 skills<img src="images/arrow.png"></a> 
+                </div>
+            </div>
+        </div>
+
+    <!-------------- profile-sidebar ------------------>
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Muskan, restart your Premium free trial today!</p>
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/key.png">
+                </div>
+                <b>See who's viewed your profile in the last 365 days</b>
+                <a href="#" class="ad-link">Restart Trial</a>
+            </div>
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="images/user-2.jpg">
+                    <div>
+                        <h2>Samuel Leo</h2>
+                        <p>Head of Marketing at Oracle</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h2>Emily Grace</h2>
+                        <p>Head of Marketing at Oracle</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-4.jpg">
+                    <div>
+                        <h2>Flex Davis</h2>
+                        <p>Head of Marketing at Oracle</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-6.jpg">
+                    <div>
+                        <h2>Sophia Elizabeth</h2>
+                        <p>Head of Marketing at Oracle</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-3.webp">
+                    <div>
+                        <h2>David Hook</h2>
+                        <p>Head of Marketing at Oracle</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessiblity</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy & Policy</a>
+            <a href="#">Ad Choices</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business Services</a>
+            <a href="#">Get the LinkedIn app</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo.png">
+                <p>Linkedin &#169; All right reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu")
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>
